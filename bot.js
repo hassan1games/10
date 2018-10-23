@@ -528,7 +528,7 @@ client.on('message', message => {
   if(message.content === '%invite') {
   const embed = new Discord.RichEmbed()
   .setTitle('Click here')
-  .setURL('https://discordapp.com/oauth2/authorize?client_id=502681981784555536&permissions=8&scope=bot ')
+  .setURL('https://discordapp.com/oauth2/authorize?client_id=503612684353404928&permissions=8&scope=bot ')
   .setColor('RANDOM')
   message.channel.send({embed: embed});
   }
