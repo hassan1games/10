@@ -309,6 +309,9 @@ msg.reply('**هلا حبي**')
 client.on("message", message => {
   if (message.content === `${prefix}help`) {
 message.author.send(`**
+:gem:  البوت فيه كثير ميزات حلوة و جميلة
+:rocket: البوت يعمل 24 ساعه
+
 =======:globe_with_meridians: الأوامر العامه=======
 يرسل لك رابط السيرفر خاص ➥: %رابط
 اذا منشنت البوت يرد عليك ➥: منشن البوت
