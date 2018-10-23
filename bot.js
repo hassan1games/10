@@ -274,23 +274,7 @@ message.channel.send(`
 
 
 
-client.on('message', message => {
-              if (!message.channel.guild) return;
-      if(message.content =='%member')  /// By KillerFox_ حقوق الفا كودز
-      var IzRo = new Discord.RichEmbed() /// By KillerFox_ حقوق الفا كودز
-      .setThumbnail(message.author.avatarURL)  /// By KillerFox_ حقوق الفا كودز
-      .setFooter(message.author.username, message.author.avatarURL) /// الفا كودز
-      .setTitle('🌷| Members info') /// By KillerFox_ حقوق الفا كودز
-      .addBlankField(true)
-      .addField('📗| Online',  /// By KillerFox_ حقوق الفا كودز
-      `${message.guild.members.filter(m=>m.presence.status == 'online').size}`)  /// By KillerFox_ حقوق الفا كودز  /// By KillerFox_ حقوق الفا كودز
-      .addField('📕| DND',`${message.guild.members.filter(m=>m.presence.status == 'dnd').size}`)  /// By KillerFox_ حقوق الفا كودز
-      .addField('📙| Idle',`${message.guild.members.filter(m=>m.presence.status == 'idle').size}`) /// By KillerFox_ حقوق الفا كودز
-      .addField('📓| Offline',`${message.guild.members.filter(m=>m.presence.status == 'offline').size}`) /// By KillerFox_ حقوق الفا كودز
-      .addField('➡| Server Members',`${message.guild.memberCount}`) /// By KillerFox_ حقوق الفا كودز
-      message.channel.send(IzRo);
-    
-    });  
+
 
 
 
@@ -331,7 +315,6 @@ message.author.send(`**
 %myinv :➥ يعرض عدد الانفيت حقك
 %server :➥ يعرض معلومات السيرفر
 %id :➥ يعرض معلوماتك
-%member :➥ يعرص اعضاء السيرفر و حالتهم
 %image :➥ يعرض صورت السيرفر
 %server invite :➥ يعرض جميع انفيت السيرفر
 %botinfo :➥ معلومات البوت
@@ -554,96 +537,7 @@ client.on('message', message => {
 
 
 
-client.on('message', msg => {
-  if (msg.content === '%السعودية') {      
-    msg.react("🇸🇦")
-    msg.channel.send("🇸🇦")
-  }
-});
 
-client.on('message', msg => {
-  if (msg.content === '%مصر') {      
-    msg.react("🇪🇬")
-    msg.channel.send("🇪🇬")
-  }
-});
-
-client.on('message', msg => {
-  if (msg.content === '%المغرب') {      
-    msg.react("🇲🇦")
-    msg.channel.send("🇲🇦")
-  }
-});
-
-client.on('message', msg => {
-  if (msg.content === '%العراق') {      
-    msg.react("🇮🇶")
-    msg.channel.send("🇮🇶")
-  }
-});
-
-client.on('message', msg => {
-  if (msg.content === '%الجزائر') {      
-    msg.react("🇩🇿")
-    msg.channel.send("🇩🇿")
-  }
-});
-
-client.on('message', msg => {
-  if (msg.content === '%الامارات') {      
-    msg.react("🇦🇪")
-    msg.channel.send("🇦🇪")
-  }
-});
-
-client.on('message', msg => {
-  if (msg.content === '%تونس') {      
-    msg.react("🇹🇳")
-    msg.channel.send("🇹🇳")
-  }
-});
-
-client.on('message', msg => {
-  if (msg.content === '%سوريا') {      
-    msg.react("🇸🇾")
-    msg.channel.send("🇸🇾")
-  }
-});
-
-client.on('message', msg => {
-  if (msg.content === '%ليبيا') {      
-    msg.react("🇱🇾")
-    msg.channel.send("🇱🇾")
-  }
-});
-
-client.on('message', msg => {
-  if (msg.content === '%قطر') {      
-    msg.react("🇶🇦")
-    msg.channel.send("🇶🇦")
-  }
-});
-
-client.on('message', msg => {
-  if (msg.content === '%الصومال') {      
-    msg.react("🇸🇴")
-    msg.channel.send("🇸🇴")
-  }
-});
-
-client.on('message', msg => {
-  if (msg.content === '%عمان') {      
-    msg.react("🇴🇲")
-    msg.channel.send("🇴🇲")
-  }
-});
-
-client.on('message', msg => {
-  if (msg.content === '%موريتانيا') {      
-    msg.react("🇲🇷")
-    msg.channel.send("🇲🇷")
-  }
-});
  
  
 
