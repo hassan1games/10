@@ -49,7 +49,7 @@ client.on('guildMemberAdd', Sal => { //By Salto7#4595
     var embed = new Discord.RichEmbed()
     .setAuthor(Sal.user.username, Sal.user.avatarURL)
     .setThumbnail(Sal.user.avatarURL)
-    .setImage('https://cdn.pg.sa/Zb9TJchU4v.png') //هنا حط الصوره الي تبيها
+    .setImage('http://live-timely-4jepdssgmc.time.ly/wp-content/uploads/2018/08/welcomeEvents.jpg') //هنا حط الصوره الي تبيها
     .setTitle('عضو جديد!')
     .setDescription('مرحبا بك بالسيرفر')
     .addField('``ايدي العضو``:',"" +  Sal.user.id, true)
