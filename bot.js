@@ -58,7 +58,7 @@ client.on("message", message => {
     credits: 150,
   };
  
- 
+ const fs = require("fs");
 fs.writeFile('profile.json', JSON.stringify(profile), (err) => {
 if (err) console.error(err);
 })
