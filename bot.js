@@ -78,29 +78,7 @@ client.on('message', message => {
 
 	
 	
-client.on('message',async msg => {//Alpha Codes
-//Alpha Codes//Alpha Codes//Alpha Codes//Alpha Codes//Alpha Codes
-  var prefix = "%";//Alpha Codes
-//Alpha Codes
-  if(msg.content.startsWith(prefix + "user")) {//Alpha Codes
-  if(!msg.guild.member(msg.author).hasPermissions('MANAGE_CHANNELS')) return msg.reply('❌ **للأسف لا تمتلك صلاحية**');
-  if(!msg.guild.member(client.user).hasPermissions(['MANAGE_CHANNELS'])) return msg.reply('❌ **البوت لا يمتلك صلاحية**');
-  msg.guild.createChannel(`يتم تحضير الروم :[]` , 'voice').then(time => {
-    time.overwritePermissions(msg.guild.id, {
-      CONNECT: false,
-      SPEAK: false
-    });
-  setInterval(() => {
-      var currentTime = new Date(),
-Year = currentTime.getFullYear(),
-Month = currentTime.getMonth() + 1,
-Dat = currentTime.getDate()//Alpha Codes
-      time.setName(`Members :  - ${client.users.size} - `);
- },1000);
-  });//Alpha Codes
-  }
- 
-});
+
 
 
 
@@ -348,7 +326,6 @@ message.author.send(`**
 امر الباند من السيرفر ➥: %باند
 امر الطرد من السيرفر ➥: %كيك
 %bc :➥ برودكاست مطور
-%user :➥ يصنع روم يعرض اعضاء السيرفر
 يقفل الشات ➥: %قفل
 يفتح الشات ➥: %فتح
 يمسح الشات ➥: %مسح
